@@ -21,7 +21,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete" # Opções comuns do rsync
           SOURCE: "./" # Copiar todo o conteúdo do repositório
-          REMOTE_HOST: "ec2-3-83-46-84.compute-1.amazonaws.com"  # Seu DNS público: ec2-3-83-46-84.compute-1.amazonaws.com
+          REMOTE_HOST: "ec2-44-202-6-163.compute-1.amazonaws.com"  # Seu DNS público: ec2-3-83-46-84.compute-1.amazonaws.com
           REMOTE_USER: "ubuntu" # Provavelmente 'ubuntu' para Ubuntu 22.04
           TARGET: "/home/ubuntu" # Ex: /var/www/html/seu-app-laravel
           EXCLUDE: "/dist/, /node_modules/, .git*, .github*, vendor/, storage/logs/*, storage/framework/sessions/*, storage/framework/cache/data/*, storage/framework/views/*, bootstrap/cache/*.php, **.env"
